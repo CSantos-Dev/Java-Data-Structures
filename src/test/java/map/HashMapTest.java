@@ -78,6 +78,19 @@ public class HashMapTest {
     }
 
     @Test
+    public void containsKeyReturnsTrueIfGivenKeyIsPresent() {
+        map.put(1, "1");
+        assertTrue(map.containsKey(1));
+    }
+
+    @Test
+    public void containsKeyReturnsFalseIfGivenKeyIsNotPresent() {
+        map.put(1, "1");
+        assertFalse(map.containsKey(2));
+    }
+
+
+    @Test
     public void mapWorksWithBadHashcodeImplementation() {
         HashMap<MockKey, String> dummyMap = new HashMap<>();
         dummyMap.put(new MockKey(1), "1");

@@ -108,6 +108,24 @@ public class HashMap<K, V> {
         return false;
     }
 
+    /**
+     * Returns whether the map contains the given key or not
+     */
+    public boolean containsKey(K key) {
+      int index = mapKeyToIndex(key);
+
+      Entry current = entries[index];
+
+      while (current != null) {
+          if(current.key.equals(key)) {
+              return true;
+          }
+          current = current.next;
+      }
+
+      return false;
+    }
+
     public boolean isEmpty() {
         return size == 0;
     }
