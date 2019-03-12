@@ -1,5 +1,7 @@
 package tree;
 
+import java.util.Objects;
+
 /**
  * Implementation of BinarySearchTree
  * Does not store nulls and duplicated values
@@ -14,9 +16,7 @@ public class BinarySearchTree<T extends Comparable> {
      * Add a new element to the tree
      */
     public void add(T data) {
-        if(data == null) {
-            throw new NullPointerException();
-        }
+        Objects.requireNonNull(data);
         root = addRecursive(root, data);
     }
 

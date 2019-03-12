@@ -2,6 +2,7 @@ package stack;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
+import java.util.Objects;
 
 /**
  * Implementation of stack using inner array
@@ -24,12 +25,11 @@ public class StackArray<T> {
      * Inserts a new element in the top of the stack
      */
     public void push(T data) {
+        Objects.requireNonNull(data);
+
         if(size == capacity) {
             capacity *= 2;
             elements = Arrays.copyOf(elements, capacity);
-        }
-        if (data == null) {
-            throw new NullPointerException("Null value can not be inserted");
         }
 
         elements[++top] = data;

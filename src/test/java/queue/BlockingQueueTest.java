@@ -8,6 +8,10 @@ import java.util.concurrent.*;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Test class for test cases of BlockingQueue implementation
+ * @author csantos
+ */
 public class BlockingQueueTest {
 
     private BlockingQueue<Integer> blockingQueue;

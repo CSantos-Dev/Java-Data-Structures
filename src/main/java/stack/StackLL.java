@@ -1,6 +1,7 @@
 package stack;
 
 import java.util.EmptyStackException;
+import java.util.Objects;
 
 /**
  * Implementation of stack using inner LinkedList
@@ -15,9 +16,7 @@ public class StackLL<T> {
      * Inserts a new element in the top of the stack
      */
     public void push(T data) {
-        if(data == null) {
-            throw new NullPointerException("Null value can not be inserted");
-        }
+        Objects.requireNonNull(data);
         Node newNode = new Node(data);
         newNode.next = top;
         top = newNode;
