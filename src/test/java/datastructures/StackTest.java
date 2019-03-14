@@ -1,4 +1,4 @@
-package stack;
+package datastructures;
 
 import org.junit.Assert;
 import org.junit.Before;

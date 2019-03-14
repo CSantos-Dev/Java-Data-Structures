@@ -1,4 +1,4 @@
-package queue;
+package datastructures;
 
 import org.junit.After;
 import org.junit.Before;
@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class BlockingQueueTest {
 
-    private BlockingQueue<Integer> blockingQueue;
+    private datastructures.BlockingQueue<Integer> blockingQueue;
     private ExecutorService executorService;
 
     @Before

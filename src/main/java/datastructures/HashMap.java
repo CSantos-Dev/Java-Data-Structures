@@ -1,10 +1,10 @@
-package map;
+package datastructures;
 
 import java.util.Arrays;
 
 /**
  * Implementation of HashMap.
- * hashcode() method is used to allocate the entries within the inner array of LinkedList
+ * hashcode() method is used to allocate the entries within the inner array of datastructures.LinkedList
  * @author csantos
  */
 public class HashMap<K, V> {
@@ -51,7 +51,7 @@ public class HashMap<K, V> {
                 }
             }
 
-            // In case there is no entry with the given key, the a new entry will be allocated at the tail of the Entry LinkedList
+            // In case there is no entry with the given key, the a new entry will be allocated at the tail of the Entry datastructures.LinkedList
             current.next = newEntry;
             size++;
         }

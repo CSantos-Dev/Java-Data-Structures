@@ -1,9 +1,9 @@
-package queue;
+package datastructures;
 
 import java.util.Objects;
 
 /**
- * Implementation of Queue using inner LinkedList
+ * Implementation of Queue using inner datastructures.LinkedList
  * @author csantos
  */
 public class QueueLL<T> {

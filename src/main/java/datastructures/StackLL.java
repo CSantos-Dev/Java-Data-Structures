@@ -1,10 +1,10 @@
-package stack;
+package datastructures;
 
 import java.util.EmptyStackException;
 import java.util.Objects;
 
 /**
- * Implementation of stack using inner LinkedList
+ * Implementation of stack using inner datastructures.LinkedList
  * @author csantos
  */
 public class StackLL<T> {

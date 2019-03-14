@@ -1,4 +1,4 @@
-package tree;
+package datastructures;
 
 import java.util.Objects;
 
