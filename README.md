@@ -6,6 +6,7 @@ The purpose of this repository is to show how the different data structures can 
 - Stack
 - Queue
 - BlockingQueue
+- Min-Heap
 - HashMap
 - BinarySearchTree
 - Graph
